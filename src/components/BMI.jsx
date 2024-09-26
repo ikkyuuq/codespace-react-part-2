@@ -6,7 +6,7 @@ const BMI = () => {
   const [bmi, setBmi] = useState(0);
   const calcBmi = () => {
     let w = weightInput.current.value;
-    let h = heightInput.current.value;
+    let h = heightInput.current.value / 100;
     setBmi(w / Math.pow(h, 2));
   };
   const BmiText = ({ bmi }) => {
