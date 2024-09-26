@@ -10,14 +10,14 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    {/* codespace react part 1*/}
     <Counter type={"Guests"} />
     <Counter type={"Rooms"} />
     <TextField />
 
     {/*  26/09/2024 */}
-
+    {/* codespace react part 2*/}
     <ItemList />
-
     <BMI />
   </React.StrictMode>,
 );
