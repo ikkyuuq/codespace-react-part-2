@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import TextField from "./components/TextField";
 import Counter from "./components/Counter";
+import ItemList from "./components/ItemList";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -11,6 +12,9 @@ root.render(
     <Counter type={"Guests"} />
     <Counter type={"Rooms"} />
     <TextField />
+
+    {/*  26/09/2024 */}
+    <ItemList />
   </React.StrictMode>,
 );
 
