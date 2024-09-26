@@ -4,6 +4,7 @@ import "./index.css";
 import TextField from "./components/TextField";
 import Counter from "./components/Counter";
 import ItemList from "./components/ItemList";
+import BMI from "./components/BMI";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -14,7 +15,10 @@ root.render(
     <TextField />
 
     {/*  26/09/2024 */}
+
     <ItemList />
+
+    <BMI />
   </React.StrictMode>,
 );
 
