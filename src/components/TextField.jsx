@@ -11,7 +11,7 @@ function TextField() {
         alignItems: "center",
       }}
     >
-      <label for="text">You typed for {context.length} characters</label>
+      <label htmlFor="text">You typed for {context.length} characters</label>
       <input
         type="text"
         name="text"
