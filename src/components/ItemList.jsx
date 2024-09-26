@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Items = [
   { name: "Tomato", isPacked: true },
@@ -28,6 +28,14 @@ const Item = ({ name, isPacked }) => {
 
 const ItemList = () => {
   const [search, setSearch] = useState("");
+
+  useEffect(() => {
+    console.log("This component is loaded!");
+
+    return () => {
+      console.log("This component is unloaded!");
+    };
+  }, []);
 
   const filterList = Items.filter((item) => {
     return item.name.toLowerCase().includes(search.toLowerCase());
